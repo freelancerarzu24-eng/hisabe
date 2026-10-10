@@ -1,40 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HisabPro - Professional SaaS Dashboard</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Using a lightweight icon library for prototyping -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <div class="app-container">
-        <!-- Sidebar -->
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <div class="logo">
-                    <i class="fas fa-chart-line"></i>
-                    <span class="logo-text">HisabPro</span>
-                </div>
-                <button class="close-sidebar-btn" id="closeSidebar" aria-label="Close Sidebar">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <nav class="sidebar-nav">
-                <ul>
-                    <li class="active"><a href="#"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
-                    <li><a href="#"><i class="fas fa-box"></i> <span>Products</span></a></li>
-                    <li><a href="#"><i class="fas fa-users"></i> <span>Customers</span></a></li>
-                    <li><a href="#"><i class="fas fa-file-invoice-dollar"></i> <span>Invoices</span></a></li>
-                    <li><a href="#"><i class="fas fa-chart-bar"></i> <span>Reports</span></a></li>
-                    <li><a href="#"><i class="fas fa-cog"></i> <span>Settings</span></a></li>
-                </ul>
-            </nav>
-            <div class="sidebar-footer">
-                <a href="#"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
-            </div>
-        </aside>
+<?php include 'includes/header.php'; ?>
+<?php include 'includes/sidebar.php'; ?>
 
         <!-- Main Content Area -->
         <main class="main-content">
@@ -268,18 +233,4 @@
             </div>
         </main>
 
-        <!-- Mobile Bottom Navigation -->
-        <nav class="bottom-nav">
-            <ul>
-                <li class="active"><a href="#"><i class="fas fa-home"></i><span>Home</span></a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i><span>POS</span></a></li>
-                <li><a href="#"><i class="fas fa-plus-circle center-icon"></i></a></li>
-                <li><a href="#"><i class="fas fa-users"></i><span>Clients</span></a></li>
-                <li><a href="#"><i class="fas fa-cog"></i><span>Menu</span></a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <script src="js/script.js"></script>
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
